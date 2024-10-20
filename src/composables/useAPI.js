@@ -15,11 +15,11 @@ export default function useAPI() {
         }
     }
 
-    const getQuestion = async (catergoryID) => {
-        const reponse = await instance.get('api,php', {
+    const getQuestion = async (categoryId) => {
+        const response = await instance.get('api.php', {
             params: {
                 amount: 1,
-                category: catergoryID,
+                category: categoryId,
             }
         })
 
